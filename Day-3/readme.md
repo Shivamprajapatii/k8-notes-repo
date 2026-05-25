@@ -98,7 +98,20 @@ Note: I decided i will go with Kind k8 cluster.
 
 ![My Screenshot](7.jpeg)
 
+    You'll see processes such as:
+    kube-apiserver
+    kube-controller-manager
+    kube-scheduler
+These are the actual Kubernetes control-plane components running inside that container.
+
 # Lets Exec and Understand what Running inside Owrker Container 
     > docker exec -it f96dc394a1b0 bash
 
 ![My Screenshot](8.jpeg)
+
+
+
+
+namesapce, Kube proxy, servic, deployment, persists volume,secrets, pods, container, nginx
+Everything in k8 is a menifest file
+CNI, coreDNS, k8 resources
