@@ -1,3 +1,7 @@
+# Get Deployment 
+    > kubectl get deployment -n development
+    list all the deployment in the development namesapce
+
 # Scale Deployemnt 
     > kubectl scale deployment nginx-deployment -n development --replicas=10
     > watch kubectl get pods -n development
