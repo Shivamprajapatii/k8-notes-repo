@@ -14,3 +14,13 @@ i) Introduction
 14) ArgoCCD
 15) Cert-Manager [SSL/TLS]
 
+
+
+
+
+## Need to Study 
+namesapce, Kube proxy, servic, deployment, persists volume,secrets, pods, container, nginx
+Everything in k8 is a menifest file
+CNI, coreDNS, k8 resources
+Selector, spec
+CNI

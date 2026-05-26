@@ -111,7 +111,3 @@ These are the actual Kubernetes control-plane components running inside that con
 
 
 
-
-namesapce, Kube proxy, servic, deployment, persists volume,secrets, pods, container, nginx
-Everything in k8 is a menifest file
-CNI, coreDNS, k8 resources
