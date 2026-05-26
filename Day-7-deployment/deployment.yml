@@ -10,11 +10,12 @@ metadata:
 
 spec:
   replicas: 5
+
   selector:
     matchLabels:
       app: nginx
 
-  template: 
+  template: #  Blueprint of Pod
     metadata:
       name: nginx-pod
       namespace: development
