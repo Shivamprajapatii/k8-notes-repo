@@ -20,3 +20,6 @@ If we want something from our cluster we use get command.
 
 ## apply Command
     > kubectl apply -f nginx.yaml
+
+## Command Which Pod is Running on Which Cluster Node
+    > kubectl get pods -n portfolio -o wise
