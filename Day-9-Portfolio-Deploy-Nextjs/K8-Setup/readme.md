@@ -4,4 +4,5 @@
 3) Then Create Pods (pod.yml)
 4) Create Service (service.yml)
 5) deployment.yml (deployment.yml)
+6) Port Forwording 
 
