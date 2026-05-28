@@ -3,5 +3,8 @@
     > docker images
     > docker ps
     > docker stop 3d692be5abaa
+    > docker ps -a
+    > docker start 3d692be5abaa
     > docker rm  3d692be5abaa
     > docker kill 3d692be5abaa
+
