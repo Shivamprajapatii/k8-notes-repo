@@ -23,9 +23,3 @@ If we want something from our cluster we use get command.
 
 ## Command Which Pod is Running on Which Cluster Node
     > kubectl get pods -n portfolio -o wise
-
-## Get all thing in a signle Command which come under a Namesapce 
-    > kubectl get all -n portfolio
-     
-## Delete Service 
-    > kubectl delete svc/portfolio -n portfolio
