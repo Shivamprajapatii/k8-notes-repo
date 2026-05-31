@@ -24,3 +24,4 @@ Everything in k8 is a menifest file
 CNI, coreDNS, k8 resources
 Selector, spec
 CNI
+anotations

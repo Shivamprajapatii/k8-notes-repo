@@ -23,3 +23,7 @@ If we want something from our cluster we use get command.
 
 ## Command Which Pod is Running on Which Cluster Node
     > kubectl get pods -n portfolio -o wide
+
+## Delete All Service and All
+    > kubectl delete -f .
+    (this will work where your .yml file exist)

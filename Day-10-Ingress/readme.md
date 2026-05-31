@@ -5,6 +5,9 @@
 
     Ingress = Rules
 
+    Basically it build for microservice applications. internally uses nginx.
+    Redirect to /payment, /profile or etc
+
 # What is an Ingress Controller?
     A software that reads Ingress rules and routes traffic.
 
