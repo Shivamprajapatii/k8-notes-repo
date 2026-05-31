@@ -1,0 +1,17 @@
+kind: PersitentVolume
+apiVersion: v1
+
+metadata:
+  name: mysql-pv
+
+spec: 
+  storageClassName: standard
+
+  capacity: 
+    storgae: 2Gi # Same 2GB
+
+  accessModes:
+    - ReadWriteOnce
+
+  hostPath:
+    path: /mnt/data

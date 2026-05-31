@@ -25,3 +25,6 @@ CNI, coreDNS, k8 resources
 Selector, spec
 CNI
 anotations
+What is StorageClassName?
+Resource limiting in kubernates? like request and limits
+
