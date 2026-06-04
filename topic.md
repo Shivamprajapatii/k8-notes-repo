@@ -29,6 +29,9 @@ What is StorageClassName?
 Resource limiting in kubernates? like request and limits
 
 
+Labels
+Selectors
+Multiple Pods
 
 
 Linting in Node or Next js or any Project use case
