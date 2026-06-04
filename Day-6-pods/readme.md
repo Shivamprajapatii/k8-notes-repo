@@ -10,6 +10,8 @@
 # Pods Describe in details
     > kubectl describe pod pod_name -n namesapce_name
 
+# SSH into Pods
+    > kubectl exec -it pod_name -- /bin/sh
 
 # Pod Log Check
     Some time suppose pods runs and internally getting DB connection failed or something else so to check we use log.
