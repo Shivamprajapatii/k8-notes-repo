@@ -12,9 +12,18 @@ Note: I decided i will go with Kind k8 cluster.
 
 ## Insall Docker 
     > sudo apt-get install docker.io
+    (the package installation typically creates a Linux group named docker automatically.)
+
     > docker -v
+    
     > sudo usermod -aG docker ubuntu
+    (When Installation Completed Docker Automatically creats a group called docker and now i have to add my ubuntu user in that group)
+
     > newgrp docker
+    (to refresh group membership.)
+
+### Note: root can access Docker because the Docker socket (/var/run/docker.sock) is owned by root. Normal users (like ubuntu) are not members of the docker group yet.
+
 
 ![My Screenshot](1.png)
 
@@ -104,7 +113,7 @@ Note: I decided i will go with Kind k8 cluster.
     kube-scheduler
 These are the actual Kubernetes control-plane components running inside that container.
 
-# Lets Exec and Understand what Running inside Owrker Container 
+# Lets Exec and Understand what Running inside Worker Container 
     > docker exec -it f96dc394a1b0 bash
 
 ![My Screenshot](8.jpeg)

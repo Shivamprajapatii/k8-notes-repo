@@ -28,3 +28,9 @@ anotations
 What is StorageClassName?
 Resource limiting in kubernates? like request and limits
 
+
+
+
+Linting in Node or Next js or any Project use case
+Ex- ES-Lint
+
