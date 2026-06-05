@@ -27,7 +27,7 @@ metadata:
 
   labels:
     app: dev
-    env: prod
+    env: dev
 
 spec:
   containers:
