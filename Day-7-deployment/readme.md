@@ -31,5 +31,9 @@
     > kubectl get replicasets
     > kubectl get pods
 
-
-
+# Internal Architecture 
+    Deployment
+      ↓
+    ReplicaSet
+      ↓
+    Pods
