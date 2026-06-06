@@ -51,3 +51,6 @@
 
     - role: worker
     image: kindest/node:v1.32.2
+
+# Create Cluster Command:
+    > kind create cluster --config cluster.yml --name first-cluster

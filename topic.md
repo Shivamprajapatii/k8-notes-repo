@@ -37,3 +37,10 @@ Multiple Pods
 Linting in Node or Next js or any Project use case
 Ex- ES-Lint
 
+
+Migration, Backup, One time Script etc
+If you have to execute some certian task for a min or it is a small task 
+you can use k8s job where this will execute at a one time.
+
+
+
