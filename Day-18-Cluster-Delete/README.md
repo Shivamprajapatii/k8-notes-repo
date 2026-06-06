@@ -28,3 +28,21 @@
     > kind get clusters
 
     
+# Why does kind delete cluster work?
+    First things kind creates the cluster after that kubectl access those. cluster ware build using kind not with kubectl.
+
+# Real AWS Example
+    Suppose you have an EKS cluster:
+    AWS
+    └── EKS Cluster
+
+    You can do: > kubectl delete pod nginx
+    
+    But you cannot do: > kubectl delete cluster eks-prod
+
+
+# because Kubernetes does not manage itself.
+    Instead AWS manages the cluster.
+    You would use:
+    > aws eks delete-cluster --name eks-prod
+
