@@ -42,5 +42,8 @@ Migration, Backup, One time Script etc
 If you have to execute some certian task for a min or it is a small task 
 you can use k8s job where this will execute at a one time.
 
+# Genertae KEYs
+> openssl rand -base64 32
+_ openssl rand -hex 32
 
 
