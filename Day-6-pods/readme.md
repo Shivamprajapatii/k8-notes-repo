@@ -1,26 +1,35 @@
-# Pod Creation
-    > kubectl apply -f pod.yml
+# Pods
+Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+- Pod is the Kubernetes unit that contains and manages one or more containers.
 
-# Verify Pods 
-    > kubectl get pods
+# Docker run time vs Pods Runtime 
 
-# Chekc All Pods 
-    > kubectl get pods -n name_space
-
-# Pods Describe in details
-    > kubectl describe pod pod_name -n namesapce_name
-
-# SSH into Pods
-    > kubectl exec -it pod_name -- /bin/sh
-
-# Pod Log Check
-    Some time suppose pods runs and internally getting DB connection failed or something else so to check we use log.
-
-    > kubectl logs nginx-pod
-
-# Check Which Worker Got It?
-    Means Sometime i want to check this pods is running in which Worker Node
-
-    > kubectl get pods -o wide
+             NORMAL
+               │
+             Docker
+               │
+               ↓
+           Container
+               │
+               ↓
+          Application
 
 
+
+
+            KUBERNETES
+               │
+           Kubernetes
+               │
+               ↓
+              Pod
+               │
+               ↓
+        Container Runtime
+       (containerd / CRI-O)
+               │
+               ↓
+           Container
+               │
+               ↓
+          Application
