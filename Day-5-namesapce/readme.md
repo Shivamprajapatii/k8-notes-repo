@@ -11,7 +11,7 @@
         Team-A -> Max 10 CPU
         Team-B -> Max 20 CPU
 
-![My Screenshot](1.png)
+<img src="./images/1.png">
 
 # What Problem Does Namespace Solve?
     Imagine your kind cluster hosts:
@@ -51,23 +51,9 @@ Think of Namespace as: Folder inside Kubernetes.
     ├── backend
     └── mysql
 
-
-
-![My Screenshot](2.png)
-
-
-
-
-# Create Namespace
-    > kubectl create namespace dev
-
-![My Screenshot](3.png)
+        
+<img src="./images/2.png">
 
 
 
-    > kubectl get ns
-
-# Deploy into Namespace
-    > kubectl create deployment nginx --image=nginx -n dev
-    > kubectl get pods -n dev
 
