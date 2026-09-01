@@ -22,7 +22,7 @@ spec:
       labels:
         app: nginx
 
-    spec:
+    spec:  # Container or Application
       containers:
       - name: nginx
         image: nginx:1.14.2
