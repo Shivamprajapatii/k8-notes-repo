@@ -37,3 +37,23 @@
     ReplicaSet
       ↓
     Pods
+
+# And here's the big picture you should have in your head
+
+                      Deployment
+                  nginx-deployment
+                        │
+                    replicas: 5
+                        │
+                        ↓
+                    ReplicaSet
+                        │
+            ┌────────────┼────────────┐
+            ↓            ↓            ↓
+          Pod 1         Pod 2        Pod 3 ...
+            │            │
+        nginx        nginx
+        container    container
+            │            │
+            ↓            ↓
+        nginx process  nginx process
