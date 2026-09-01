@@ -192,6 +192,14 @@ Approximately:
 
 assuming the workload scales well. **This is why replicas exist.**
 
+# 8, Ingress / Load Balancer bottleneck
+# 9. Database bottleneck
+# 10. Storage bottleneck
+# 11. Scheduler bottleneck
+# 12. etcd bottleneck
+# 13. API Server bottleneck
+# 14. Control Plane bottleneck
+
 # 🏢 Cluster Bottlenecks
 
 - **Control Plane Overload:** The API server slows down from too many requests.
@@ -215,3 +223,21 @@ assuming the workload scales well. **This is why replicas exist.**
 - **Single-Threaded Code:** The app uses only one CPU core while others sit idle.
 - **Application Connection Pools:** The app runs out of database or HTTP connections.
 - **Storage IOPS:** Persistent volumes throttle application data processing.
+
+
+
+# Bottleneck can happen at every level:
+
+    Application  → CPU / threads / code
+    Container    → CPU / RAM limits
+    Pod          → capacity / scaling
+    Node         → CPU / RAM / disk / network
+    Cluster      → total capacity
+    API Server   → API request load
+    Scheduler    → scheduling workload
+    etcd         → cluster-state I/O
+    Network      → bandwidth / latency
+    Storage      → IOPS / throughput
+    Database     → CPU / connections / locks / IOPS
+    Load Balancer→ throughput / connections
+    
