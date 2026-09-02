@@ -2,7 +2,7 @@
     How do users or other applications reach my Pods? That's exactly why Services exist.
     A Service provides a stable IP and DNS name in front of Pods.
 
-![My Screenshot](3.png)
+<img src="./images/3.png">
 
 ## The Problem Before Service
     Suppose you create a Deployment:

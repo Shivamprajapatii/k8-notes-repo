@@ -11,4 +11,4 @@
 # Port Forwording 
     > kubectl port-forward svc/nginx-svc -n development 8080:82 --address=0.0.0.0
 
-![My Screenshot](2.png)
+<img src="./images/2.png">
